@@ -1,0 +1,6 @@
+
+This is an implementation of a simple backend chat for the assignment of Bunq by Markos Fountoulakis. The chat is implemented in PHP and SQLite and asynchonous calls
+to the server are done with AJAX, using a bit of JQuery. The technique used for getting new messages from the server is the relatively old technique 
+of long polling, where rather than polling the server for new data in standard intervals, establishes a connection to the server and waits until there
+are new data, or timeouts after a small period of time (20 s). The db tables necessary can be created with the file createdb.php, and a very simple gui and
+login part are included although not necessary. The application is run by accessing the file chat.php, after the db has been created.
